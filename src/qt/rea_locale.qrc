@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/rea_bg.qm</file>
+        <file alias="ca">locale/rea_ca.qm</file>
+        <file alias="cs">locale/rea_cs.qm</file>
+        <file alias="da">locale/rea_da.qm</file>
+        <file alias="de">locale/rea_de.qm</file>
+        <file alias="en">locale/rea_en.qm</file>
+        <file alias="en_US">locale/rea_en_US.qm</file>
+        <file alias="es">locale/rea_es.qm</file>
+        <file alias="fi">locale/rea_fi.qm</file>
+        <file alias="fr_FR">locale/rea_fr_FR.qm</file>
+        <file alias="it">locale/rea_it.qm</file>
+        <file alias="ja">locale/rea_ja.qm</file>
+        <file alias="ko_KR">locale/rea_ko_KR.qm</file>
+        <file alias="nl">locale/rea_nl.qm</file>
+        <file alias="pl">locale/rea_pl.qm</file>
+        <file alias="pt">locale/rea_pt.qm</file>
+        <file alias="pt_BR">locale/rea_pt_BR.qm</file>
+        <file alias="ro_RO">locale/rea_ro_RO.qm</file>
+        <file alias="ru">locale/rea_ru.qm</file>
+        <file alias="sk">locale/rea_sk.qm</file>
+        <file alias="sv">locale/rea_sv.qm</file>
+        <file alias="uk">locale/rea_uk.qm</file>
+        <file alias="zh_CN">locale/rea_zh_CN.qm</file>
+        <file alias="zh_TW">locale/rea_zh_TW.qm</file>
+    </qresource>
+</RCC>

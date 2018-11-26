@@ -1,0 +1,26 @@
+[Unit]
+Description=REA's distributed currency daemon
+After=network.target
+
+[Service]
+User=rea
+Group=rea
+
+Type=forking
+PIDFile=/var/lib/read/read.pid
+
+ExecStart=/usr/bin/read -daemon -pid=/var/lib/read/read.pid \
+          -conf=/etc/rea/rea.conf -datadir=/var/lib/read
+
+ExecStop=-/usr/bin/rea-cli -conf=/etc/rea/rea.conf \
+         -datadir=/var/lib/read stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

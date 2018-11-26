@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rea
+Comment=Rea P2P Cryptocurrency
+Comment[fr]=Rea, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Rea, eşten eşe kriptografik sanal para birimi
+Exec=rea-qt %u
+Terminal=false
+Type=Application
+Icon=rea128
+MimeType=x-scheme-handler/rea;
+Categories=Office;Finance;
