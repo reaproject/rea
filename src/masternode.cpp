@@ -322,8 +322,9 @@ bool CMasternode::IsValidNetAddr()
 {
     // TODO: regtest is fine with any addresses for now,
     // should probably be a bit smarter if one day we start to implement tests for this
-    return Params().NetworkID() == CBaseChainParams::REGTEST ||
-           (IsReachable(addr) && addr.IsRoutable());
+    //return Params().NetworkID() == CBaseChainParams::REGTEST ||
+    //       (IsReachable(addr) && addr.IsRoutable());
+	return true;
 }
 
 CMasternodeBroadcast::CMasternodeBroadcast()
@@ -564,7 +565,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
 
     if (pmn != NULL) {
         // nothing to do here if we already know about this masternode and it's enabled
-        if (pmn->IsEnabled()) return true;
+        if (pmn->IsEnabled() && !(pubKeyMasternode == activeMasternode.pubKeyMasternode && activeMasternode.status == ACTIVE_MASTERNODE_NOT_CAPABLE)) return true;
         // if it's not enabled, remove old MN first and continue
         else
             mnodeman.Remove(pmn->vin);

@@ -136,23 +136,6 @@ public:
         genesis.nTime = 1542882600;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0x6a4cd;
-/*
-//GVT
-    hashGenesisBlock = uint256("0x01");
-    if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for mainnet.\n");
-            printf("old mainnet genesis nonce: %x\n", genesis.nNonce);
-            printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ }
-            printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("new mainnet genesis nonce: %x\n", genesis.nNonce);
-            printf("new mainnet genesis nbits: %x\n", genesis.nBits);
-            printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
-//GVT
-*/
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000002109ac23348b292638f98501824d7d3df12e97a70bf51cbd27472bbaf3"));
@@ -225,23 +208,6 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1542882601;
         genesis.nNonce = 0xdd8f1;
-/*
-//GVT
-    hashGenesisBlock = uint256("0x01");
-    if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for testnet.\n");
-            printf("old testnet genesis nonce: %x\n", genesis.nNonce);
-            printf("old testnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ }
-            printf("new testnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("new testnet genesis nonce: %x\n", genesis.nNonce);
-            printf("new testnet genesis nbits: %x\n", genesis.nBits);
-            printf("new testnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
-//GVT
-*/
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000005cd67e9e2955f186c59e92e69a827a4c056b484c6f54da0c00e6d2f39f0"));
@@ -306,23 +272,6 @@ public:
         genesis.nTime = 1542882602;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 0x3;
-/*
-//GVT
-    hashGenesisBlock = uint256("0x01");
-    if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for regtestnet.\n");
-            printf("old regtestnet genesis nonce: %x\n", genesis.nNonce);
-            printf("old regtestnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ }
-            printf("new regtestnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("new regtestnet genesis nonce: %x\n", genesis.nNonce);
-            printf("new regtestnet genesis nbits: %x\n", genesis.nBits);
-            printf("new regtestnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
-//GVT
-*/
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 36590;
